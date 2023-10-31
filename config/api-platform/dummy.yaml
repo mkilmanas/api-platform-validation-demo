@@ -1,0 +1,10 @@
+resources:
+    App\Dto\Dummy:
+        operations:
+            ApiPlatform\Metadata\Get:
+                status: 404
+                controller: ApiPlatform\Action\NotFoundAction
+                read: false
+                uriTemplate: '/dummies/{id}'
+
+            ApiPlatform\Metadata\Post: ~

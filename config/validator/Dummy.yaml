@@ -1,0 +1,5 @@
+App\Dto\Dummy:
+    properties:
+        title:
+            - Type: string
+            - NotBlank: ~
