@@ -4,6 +4,7 @@ This is a demo to reproduce API Platform issue [#5912](https://github.com/api-pl
 
 ```shell
 composer install
+php -S localhost:8080 -t public/
 ```
 
 ## Reproduce
@@ -12,10 +13,10 @@ composer install
 
 ```shell
 curl -X 'POST' \
-  'http://localhost/api/dummies' \
+  'http://localhost:8080/api/dummies' \
   -H 'accept: application/json' \
   -H 'Content-Type: application/json' \
-  -d '{"id": "foorbar", "title": null}'
+  -d '{"title": null}'
 ```
 
 ### Expected result

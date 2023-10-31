@@ -6,7 +6,5 @@ namespace App\Dto;
 
 class Dummy
 {
-    public mixed $id;
-
     public mixed $title;
 }
